@@ -37,6 +37,7 @@ function insertToDoList(event){
     toDos.push(newToDoObj);
     saveToDo();
 }
+
 toDoForm.addEventListener('submit', insertToDoList);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
