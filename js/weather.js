@@ -1,4 +1,4 @@
-function SucessGetPosition(position){
+function SuccessGetPosition(position){
     console.log(position);
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
@@ -9,11 +9,11 @@ function SucessGetPosition(position){
         const city = document.querySelector("#weather span:first-child");
         const weather = document.querySelector("#weather span:last-child");
         city.innerText = data.name;
-        weather.innerText = `${data.weather[0].main} & ${data.main.temp} `;
+        weather.innerText = `${data.weather[0].main},  ${data.main.temp}C `;
     }))
 }
 
 function errorGetPosition(){
     alert("위치정보를 가져오는데 실패했습니다.");
 }
-navigator.geolocation.getCurrentPosition(SucessGetPosition, errorGetPosition);
+navigator.geolocation.getCurrentPosition(SuccessGetPosition, errorGetPosition);

@@ -8,21 +8,21 @@
     <title>momentom</title>
 </head>
 <body>
-    <h1 id="clock">00:00:00</h1>
-    <form class="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name">
-        <button>Submit</button>
-    </form>
-    <form id="todo-form">
-        <input required type="text" id="todo-input" placeholder="일정을 입력하세요들레이히">
-        <button></button>
-        <ul todo-list></ul>
-    </form>
     <div id="weather">
         <span></span>
         <span></span>
     </div>
     <h1 id="greeting" class="hidden"></h1>
+    <h1 id="clock">00:00:00</h1>
+    <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name">
+    </form>
+    <form id="todo-form">
+        <input required type="text" id="todo-input" placeholder="일정을 입력하세요">
+        <button class="hidden"></button>
+        <ul todo-list></ul>
+    </form>
+    
     <div id="quote">
         <span></span>
         <span></span>

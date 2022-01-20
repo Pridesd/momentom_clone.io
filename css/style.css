@@ -5,3 +5,80 @@ body{
 .hidden{
     display: none;
 }
+
+.background{
+    position: absolute;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+}
+
+#quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    color: blanchedalmond;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+#greeting{
+    font-size: 5rem;
+    color: darkred;
+    opacity: 70%;
+    display: flex;
+    width: 100%;
+    padding-top: 4rem;
+    justify-content: center;
+    padding-bottom: 0rem;
+    margin-bottom: 0.5rem;
+    margin-top: 6rem;
+}
+
+#login-form{
+    text-align: center;
+}
+#login-form input{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    background: none;
+    border: none;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.6);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+#clock{
+    font-size: 6rem;
+    color: darkseagreen;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#todo-form{
+    text-align: end;
+}
+
+#todo-form input{
+    background: none;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+}
+
+#todo-form ul{
+    list-style: none;
+}
